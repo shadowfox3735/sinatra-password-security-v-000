@@ -7,5 +7,6 @@ class CreateUsers < ActiveRecord::Migration[5.1]
   end
   
   def down
+    
   end
 end
