@@ -18,6 +18,7 @@ class ApplicationController < Sinatra::Base
 
 	post "/signup" do
 		@user = User.create(username: params[:username], password: params[:password])
+		session[:user_id] = @user.id
 	end
 
 	get "/login" do
